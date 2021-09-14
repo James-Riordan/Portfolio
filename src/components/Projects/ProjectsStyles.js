@@ -1,0 +1,137 @@
+import styled from 'styled-components';
+
+export const Img = styled.img`
+  margin-top: 5%;
+  width:90%;
+  height:100%;
+  overflow: hidden;
+  // border-radius: 15px;
+`
+
+export const GridContainer = styled.section`
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+padding: 3rem;
+place-items: center;
+column-gap: 2rem;
+row-gap: 3rem;
+@media ${(props) => props.theme.breakpoints.sm} {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+`
+export const BlogCard = styled.div`
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px hsla(49, 100%, 63%, 0.7);
+  text-align: center;
+  width: 400px;
+  &:hover {
+    box-shadow: 3px 3px 20px hsla(49, 100%, 63%, 1.0);
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+  }
+`;
+export const TitleContent = styled.div`
+  text-align: center;
+  z-index: 20;
+  width: 100%;
+
+`;
+
+
+export const HeaderThree = styled.h3`
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #e4e6e7;
+  padding: .5rem 0;
+  font-size: ${(props) => props.title ? '3rem' : '2rem'};
+`;
+
+export const Hr = styled.hr`
+  width: 50px;
+  height: 3px;
+  margin: 20px auto;
+  border: 0;
+  background: #d0bb57;
+`;
+
+export const Intro = styled.div`
+  width: 170px;
+  margin: 0 auto;
+  color: #dce3e7;
+  font-family: 'Droid Serif', serif;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 18px;
+`;
+
+
+export const CardInfo = styled.p`
+  width: 100%;
+  padding: 0 50px;
+  color: #e4e6e7;
+  font-style: 2rem;
+  line-height: 24px;
+  text-align: justify;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding:.3rem
+  
+}
+`;
+
+
+export const UtilityList = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 2.5rem 0;
+`;
+
+export const ExternalLinks = styled.a`
+  color:#d4c0c0;
+  font-size: 1.6rem;
+  padding:1rem 1.5rem;
+  background-image: linear-gradient(
+    to right,
+    #cb9b51 0,
+    #f6f2c0 22%, 
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #f6f2c0 78%,
+    #cb9b51 100%
+    );
+    color: black;
+  border-radius: 15px;
+  transition: 0.5s;
+  &:hover{
+    background: ${(props) =>
+      props.colorAlt
+        ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"
+        : "linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)"};
+    color: white;
+
+  }
+`;
+
+export const TagList = styled.ul`
+flex: 1 1 1;
+display: flex;
+padding: 2rem;
+justify-content: space-around;
+flex-wrap: wrap-reverse;
+overflow: hidden;
+@media (max-width: 700px) {
+  flex-direction: column;
+}
+`
+
+export const Tag = styled.li`
+color: #e4e6e7;
+font-size: 1.5rem;
+`
