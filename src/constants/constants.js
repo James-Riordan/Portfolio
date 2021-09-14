@@ -33,7 +33,7 @@ export const projects = [
     title: "Pokedex",
     description: "",
     image: "/images/projects/Pokedex.png",
-    tags: ["Sveltekit, Node"],
+    tags: ["Sveltekit", "Node"],
     
     source: "https://sveltekit-pokedex.herokuapp.com/",
     visit: "https://github.com/James-Riordan/sveltekit-pokedex",
