@@ -51,7 +51,7 @@ export const projects = [
     title: "GunChat",
     description: "",
     image: "/images/projects/FixedGunSS.png",
-    tags: ["Sveltekit", "Firebase"],
+    tags: ["Sveltekit", "Firebase, Gun"],
     source: "https://github.com/James-Riordan/GunChat",
     id: 4,
   }
