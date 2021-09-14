@@ -4,8 +4,8 @@ export const projects = [
     description: "",
     image: "/images/projects/planets.png",
     tags: ["Svelte"],
-    source: "https://james-riordan.github.io/SveltePlanetProject/",
-    visit: "https://github.com/James-Riordan/SveltePlanetProject",
+    source: "https://github.com/James-Riordan/SveltePlanetProject",
+    visit: "https://james-riordan.github.io/SveltePlanetProject/",
     id: 0,
   },
   {
@@ -35,8 +35,8 @@ export const projects = [
     image: "/images/projects/Pokedex.png",
     tags: ["Sveltekit", "Node"],
     
-    source: "https://sveltekit-pokedex.herokuapp.com/",
-    visit: "https://github.com/James-Riordan/sveltekit-pokedex",
+    source: "https://github.com/James-Riordan/sveltekit-pokedex",
+    visit: "https://sveltekit-pokedex.herokuapp.com/",
     id: 3,
   },
   {
